@@ -1,24 +1,24 @@
 {
-    "name": "faigher",
-    "version": "1.0.0",
-    "description": "",
-    "main": "gulpfile.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/SonyUA/FAIGHER.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/SonyUA/FAIGHER/issues"
-    },
-    "homepage": "https://github.com/SonyUA/FAIGHER#readme",
-    "dependencies": {
-        "gulp": "^4.0.2",
-        "gulp-sass": "^4.0.2"
-    },
-    "devDependencies": {}
+  "name": "faigher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonyUA/FAIGHER.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SonyUA/FAIGHER/issues"
+  },
+  "homepage": "https://github.com/SonyUA/FAIGHER#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {}
 }
