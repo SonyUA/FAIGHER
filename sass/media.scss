@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+    .about-box {
+        justify-content: center;
+    }
+    .img {
+        padding-bottom: 30px;
+    }
+    .about-content {
+        flex-basis: 100%;
+    }
+    .menu {
+        &__item {
+            font-size: 35px;
+        }
+        &__list {
+            display: none;
+        }
+        &--mobile {
+            display: list-item;
+        }
+    }
+    .contact-inner {
+        justify-content: center;
+    }
+    .burger-menu {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000;
+        &__item {
+            color: #fff;
+            font-size: 50px;
+        }
+    }
+}

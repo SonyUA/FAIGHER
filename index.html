@@ -6,27 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
     <div class="wrapp">
-        <!-- <div class="fullscreen-bg">
-            <video autoplay muted loop poster="./video/video (1).mp4" id="myVideo" class="fullscreen-bg__video ">
-  <source src="./video/3.mp4" type="video/mp4"> 
-        </video> -->
-
-        <header>
+        <header class="header">
             <menu>
+                <ul class="burger-menu">
+                    <li class="burger-menu__list">
+                        <a class="burger-menu__item" href="">home</a>
+                    </li>
+                    <li class="burger-menu__list">
+                        <a class="burger-menu__item" href="#skills">skills</a>
+                    </li>
+                    <li class="burger-menu__list">
+                        <a class="burger-menu__item" href="">portfolio</a>
+                    </li>
+                    <li class="burger-menu__list">
+                        <a class="burger-menu__item" href="">contacts</a>
+                    </li>
+                </ul>
                 <ul class="menu">
                     <li class="menu__list">
                         <a class="menu__item" href="">home</a>
                     </li>
                     <li class="menu__list">
-                        <a class="menu__item" href="">skills</a>
+                        <a class="menu__item" href="#skills">skills</a>
                     </li>
                     <li class="menu__list">
                         <a class="menu__item" href="">portfolio</a>
@@ -34,16 +45,22 @@
                     <li class="menu__list">
                         <a class="menu__item" href="">contacts</a>
                     </li>
+                    <li class="menu--mobile">
+                        <a class="menu__item" href="">DP</a>
+                    </li>
+                    <li class="menu--mobile">
+                        <a class="menu__item" href=""><i class="fa fa-bars icon-bars" aria-hidden="true"></i></a>
+                    </li>
 
                 </ul>
             </menu>
         </header>
-        <main class="main">
-            <div class="title-box">
+        <main>
+            <section class="title-box">
                 <h1 class="title-name">Dima<br>Pankiv</h1>
                 <h2 class="title-profession">Front end developer</h2>
-            </div>
-            <div class="about-box">
+            </section>
+            <section class="about-box">
                 <img class="img" src="./img/64801094_2363545800393842_7426425451842633728_o.jpg" alt="foto">
                 <div class="about-content">
                     <h3 class="title">About Me</h3>
@@ -51,10 +68,10 @@
                         new skills.
                     </p>
                 </div>
-            </div>
-            <div class="skills-box">
+            </section>
+            <section class="skills-box" id="skills">
                 <h3 class="title">Skills</h3>
-                <p class="text">I work in such programs as</p>
+
                 <div class="icon-box">
                     <div class="icon-box__inner">
                         <img class="icon" src="./img/learn-html-css_1.png" alt="">
@@ -97,52 +114,55 @@
                         <p class="icon-text">Photoshop</p>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio-box">
+            </section>
+            <section class="portfolio-box">
                 <h3 class="title">portfolio</h3>
                 <div class="portfolio-inner">
-                    <a class="portfolio-link" href="">CARY</a>
-                    <div class="portfolio-img-box">
-                        <img class="portfolio-img" src="./img/Cary.png" alt="">
-                    </div>
+
+                    <a href=""><img class="portfolio-img" src="./img/Cary.png" alt=""></a>
+
+
                 </div>
                 <div class="portfolio-inner">
-                    <a class="portfolio-link" href="">Dim Farb</a>
-                    <div class="portfolio-img-box">
-                        <img class="portfolio-img" src="./img/dimFarb.png" alt="">
-                    </div>
+                    <a href=""><img class="portfolio-img" src="./img/dimFarb.png" alt=""></a>
+
+
+
                 </div>
                 <div class="portfolio-inner">
-                    <a class="portfolio-link" href="">Jakard</a>
-                    <div class="portfolio-img-box">
-                        <img class="portfolio-img" src="./img/Jakard.png" alt="">
-                    </div>
+                    <a href=""><img class="portfolio-img" src="./img/Jakard.png" alt=""></a>
+
+
+
                 </div>
                 <div class="portfolio-inner">
-                    <a class="portfolio-link" href="">MIAMI</a>
-                    <div class="portfolio-img-box">
-                        <img class="portfolio-img" src="./img/miami.png" alt="">
-                    </div>
+
+                    <a href=""><img class="portfolio-img" src="./img/miami.png" alt=""></a>
+
+
                 </div>
                 <div class="portfolio-inner">
-                    <a class="portfolio-link" href="">WiNE</a>
-                    <div class="portfolio-img-box">
-                        <img class="portfolio-img" src="./img/winepage.png" alt="">
-                    </div>
+
+                    <a href=""> <img class="portfolio-img" src="./img/winepage.png" alt=""></a>
+
+
                 </div>
 
 
-            </div>
+            </section>
 
         </main>
         <footer>
-            <h3 class="title">contacts</h3>
-            <div class="contact-box">
 
-                <p>Lutsk, Ukraine</p>
-                <p><a href="">+38 (095) 896-94-49 </a></p>
-                <p><a href="">Pankivluck@gmail.com</a></p>
-                <p> <a href="">Skype: dddimas86</a></p>
+            <div class="contact-box">
+                <h3 class="title">contacts</h3>
+                <div class="contact-inner">
+
+                    <p class="footer-link"> <i class="fa fa-phone icon-phone" aria-hidden="true"></i> <a class="footer-link" href="">+38 (095) 896-94-49 </a></p>
+                    <p class="footer-link"><i class="fa fa-envelope-o icon-mail" aria-hidden="true"></i><a class=" footer-link" href="">Pankivluck@gmail.com</a></p>
+                    <p class="footer-link"> <i class="fa fa-skype icon-skype" aria-hidden="true"></i><a class=" footer-link" href="">Skype: dddimas86</a></p>
+                </div>
+
             </div>
 
 
