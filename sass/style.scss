@@ -74,7 +74,6 @@
     }
     
     .icon-bars:hover {
-        transform: scale(1.1);
         color: #FFF;
     }
     
@@ -191,21 +190,31 @@
         padding-top: 10px;
     }
     
+    .portfolio {
+        text-align: center;
+        padding-top: 30px;
+    }
+    
     .portfolio-box {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
+        flex-wrap: wrap;
         padding-top: 30px;
-        flex-direction: column;
     }
     
     .portfolio-inner {
-        padding: 30px;
+        margin: 30px;
         overflow: hidden;
+        max-width: 525px;
     }
     
     .portfolio-img {
         width: 100%;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
     
     .contact-box {
@@ -245,4 +254,4 @@
         display: none;
     }
     
-    @import './media.scss';
+    @import'./media.scss'
