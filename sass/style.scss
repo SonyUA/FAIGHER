@@ -122,6 +122,11 @@
         max-width: 30%;
         min-width: 280px;
         filter: grayscale(1);
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            filter: grayscale(0);
+        }
     }
     
     .about-content {
@@ -173,6 +178,12 @@
     
     .icon {
         width: 90px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            transform: scale(0.8);
+            filter: grayscale(1);
+        }
     }
     
     .icon-git {
@@ -204,17 +215,51 @@
     }
     
     .portfolio-inner {
+        position: relative;
         margin: 30px;
         overflow: hidden;
         max-width: 525px;
+        transition: 0.3s ease-in-out;
+        &:after {
+            content: 'OPEN';
+            position: absolute;
+            left: -100%;
+            font-size: 35px;
+            width: 0%;
+            transition: 0.3s ease-in-out;
+            background: linear-gradient(91deg, #494b4ed6 26%, #e5e5e5cf 80%);
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 3px 5px 2px #474747;
+        }
+        &:hover {
+            &::after {
+                width: 100%;
+                left: 0%;
+            }
+        }
     }
     
     .portfolio-img {
+        position: relative;
         width: 100%;
         transition: 0.3s ease-in-out;
         &:hover {
             transform: scale(1.1);
+            filter: grayscale(1);
         }
+    }
+    
+    .portfolio-text {
+        font-size: 25px;
+        font-weight: 500;
+        background-color: #FFF;
+        bottom: 50%;
+        left: 0%;
+        width: 100%;
+        line-height: 40px;
+        letter-spacing: 3px;
+        transition: 0.3s ease-in-out;
     }
     
     .contact-box {
@@ -248,6 +293,9 @@
         font-size: 18px;
         font-weight: 500;
         padding: 10px;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     
     .burger-menu {
