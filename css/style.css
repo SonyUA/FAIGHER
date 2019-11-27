@@ -23,7 +23,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px; }
+  padding: 0 30px;
+  transition: 0.3s ease-in-out; }
   .menu:after {
     content: '';
     display: block;
@@ -56,6 +57,9 @@
       color: #fff; }
   .menu--mobile {
     display: none; }
+  .menu--active {
+    height: 35px;
+    background: linear-gradient(91deg, #494b4e 26%, #e5e5e5 80%); }
 
 .icon-bars {
   transition: 0.3s ease-in-out; }

@@ -27,6 +27,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 30px;
+        transition: 0.3s ease-in-out;
         &:after {
             content: '';
             display: block;
@@ -66,6 +67,10 @@
         }
         &--mobile {
             display: none;
+        }
+        &--active {
+            height: 35px;
+            background: linear-gradient(91deg, rgb(73, 75, 78) 26%, rgb(229, 229, 229) 80%);
         }
     }
     

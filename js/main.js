@@ -34,3 +34,13 @@ $(window).scroll(function() {
         }
     });
 });
+$(function() {
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 70) {
+            $(".menu").addClass("menu--active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+            $(".menu").removeClass("menu--active");
+        }
+    });
+});
